@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => {
       paper: {
         marginTop: '20px', 
         marginLeft: '200px', 
-        marginRight: '200px', 
+        marginRight: '200px',
+        marginBottom: '50px',
         border: '2px solid #007a8c',
         [theme.breakpoints.down('sm')]: {
           marginLeft: '200x', 
