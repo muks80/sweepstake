@@ -2,21 +2,11 @@ import React, { useState } from 'react'
 import { Grid, Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import PlayerTable from './PlayerTable';
-import image from '../images/download.png';
+import image from '../images/fifa-world-cup-qatar-2022-symbol-official-logo-mondial-champion-symbol-design-abstract-illustration-with-maroon-background-free-vector.jpg';
 import Button from './inputs/Button';
 import TextField from './inputs/TextField';
 
 let teams = [
-        { country: 'Turkey',
-          flagIconCode: 'flag-icon-tr',
-          player: '',
-          id: null
-        },
-        { country: 'Italy',
-          flagIconCode: 'flag-icon-it',
-          player: '',
-          id: null
-        },
         { country: 'Switzerland',
           flagIconCode: 'flag-icon-ch',
           player: '',
@@ -32,38 +22,13 @@ let teams = [
           player: '',
           id: null
         },
-        { country: 'Finland',
-          flagIconCode: 'flag-icon-fi',
-          player: '',
-          id: null
-        },
         { country: 'Belgium',
           flagIconCode: 'flag-icon-be',
           player: '',
           id: null
         },
-        { country: 'Russia',
-          flagIconCode: 'flag-icon-ru',
-          player: '',
-          id: null
-        },
         { country: 'Netherlands',
           flagIconCode: 'flag-icon-nl',
-          player: '',
-          id: null
-        },
-        { country: 'Ukraine',
-          flagIconCode: 'flag-icon-ua',
-          player: '',
-          id: null
-        },
-        { country: 'Austria',
-          flagIconCode: 'flag-icon-at',
-          player: '',
-          id: null
-        },
-        { country: 'Slovakia',
-          flagIconCode: 'flag-icon-sk',
           player: '',
           id: null
         },
@@ -76,42 +41,17 @@ let teams = [
           flagIconCode: 'flag-icon-hr',
           player: '',
           id: null
-        },
-        { country: 'Scotland',
-          flagIconCode: 'flag-icon-gb-sct',
-          player: '',
-          id: null
-        },
-        { country: 'Czech Republic',
-          flagIconCode: 'flag-icon-cz',
-          player: '',
-          id: null
-        },
+        },   
         { country: 'Spain',
           flagIconCode: 'flag-icon-es',
           player: '',
           id: null
-        },
-        { country: 'Sweden',
-          flagIconCode: 'flag-icon-se',
-          player: '',
-          id: null
-        },
+        }, 
         { country: 'Poland',
           flagIconCode: 'flag-icon-pl',
           player: '',
           id: null
-        },
-        { country: 'North Macedonia',
-          flagIconCode: 'flag-icon-mk',
-          player: '',
-          id: null
-        },
-        { country: 'Hungary',
-          flagIconCode: 'flag-icon-hu',
-          player: '',
-          id: null
-        },
+        },     
         { country: 'Portugal',
           flagIconCode: 'flag-icon-pt',
           player: '',
@@ -126,7 +66,107 @@ let teams = [
           flagIconCode: 'flag-icon-de',
           player: '',
           id: null
-        }
+        },
+        { country: 'Argentina',
+          flagIconCode: 'flag-icon-ar',
+          player: '',
+          id: null
+        },
+        { country: 'Australia',
+          flagIconCode: 'flag-icon-au',
+          player: '',
+          id: null
+        },
+        { country: 'Brazil',
+          flagIconCode: 'flag-icon-br',
+          player: '',
+          id: null
+        },
+        { country: 'Cameroon',
+          flagIconCode: 'flag-icon-cm',
+          player: '',
+          id: null
+        },
+        { country: 'Canada',
+          flagIconCode: 'flag-icon-ca',
+          player: '',
+          id: null
+        },
+        { country: 'Costa Rica',
+          flagIconCode: 'flag-icon-cr',
+          player: '',
+          id: null
+        },
+        { country: 'Ecuador',
+          flagIconCode: 'flag-icon-ec',
+          player: '',
+          id: null
+        },
+        { country: 'Ghana',
+          flagIconCode: 'flag-icon-gh',
+          player: '',
+          id: null
+        },
+        { country: 'Iran',
+          flagIconCode: 'flag-icon-ir',
+          player: '',
+          id: null
+        },
+        { country: 'Japan',
+          flagIconCode: 'flag-icon-jp',
+          player: '',
+          id: null
+        },
+        { country: 'Mexico',
+          flagIconCode: 'flag-icon-mx',
+          player: '',
+          id: null
+        },
+        { country: 'Morocco',
+          flagIconCode: 'flag-icon-ma',
+          player: '',
+          id: null
+        },
+        { country: 'Qatar',
+          flagIconCode: 'flag-icon-qa',
+          player: '',
+          id: null
+        },
+        { country: 'Senegal',
+          flagIconCode: 'flag-icon-sn',
+          player: '',
+          id: null
+        },
+        { country: 'Saudi Arabia',
+          flagIconCode: 'flag-icon-sa',
+          player: '',
+          id: null
+        },
+        { country: 'Serbia',
+          flagIconCode: 'flag-icon-rs',
+          player: '',
+          id: null
+        },
+        { country: 'South Korea',
+          flagIconCode: 'flag-icon-kr',
+          player: '',
+          id: null
+        },
+        { country: 'Tunisia',
+          flagIconCode: 'flag-icon-tn',
+          player: '',
+          id: null
+        },
+        { country: 'USA',
+          flagIconCode: 'flag-icon-us',
+          player: '',
+          id: null
+        },
+        { country: 'Uruguay',
+          flagIconCode: 'flag-icon-uy',
+          player: '',
+          id: null
+        },
 ]
 
 const initialValues = {
@@ -150,29 +190,31 @@ const useStyles = makeStyles((theme) => {
             marginLeft: 'auto',
             marginRight: 'auto',
             marginTop: '30px',
-            marginBottom: '30px'
+            marginBottom: '30px',
+            height: '200px',
+            width: '200px'
         },
         paper: {
             marginLeft: '480px', 
             marginRight: '480px', 
-            border: 'solid 2px #007a8c', 
+            border: 'solid 2px #8A1538', 
             paddingTop: '10px',
             [theme.breakpoints.down('md')]: {
                 marginLeft: '350px', 
                 marginRight: '350px', 
-                border: 'solid 2px #007a8c', 
+                border: 'solid 2px #8A1538', 
                 paddingTop: '10px'
             },
             [theme.breakpoints.down('sm')]: {
                 marginLeft: '200px', 
                 marginRight: '200px', 
-                border: 'solid 2px #007a8c', 
+                border: 'solid 2px #8A1538', 
                 paddingTop: '10px'
             },
             [theme.breakpoints.down('xs')]: {
                 marginLeft: '10px', 
                 marginRight: '10px', 
-                border: 'solid 2px #007a8c', 
+                border: 'solid 2px #8A1538', 
                 paddingTop: '10px'
             }
         },
@@ -226,7 +268,6 @@ export default function Index() {
         setSelected([...selected, selectedTeam]);
         setValues({...values, input: ''});
         setNum(num + 1);
-        console.log(teams, selected);
     }
 
     const selectTeam = () => {

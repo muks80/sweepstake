@@ -20,17 +20,17 @@ const useStyles = makeStyles((theme) => {
         marginLeft: '200px', 
         marginRight: '200px',
         marginBottom: '50px',
-        border: '2px solid #007a8c',
+        border: '2px solid #8A1538',
         [theme.breakpoints.down('sm')]: {
           marginLeft: '200x', 
           marginRight: '200px', 
-          border: 'solid 2px #007a8c', 
+          border: 'solid 2px #8A1538', 
           paddingTop: '10px'
         },
         [theme.breakpoints.down('xs')]: {
           marginLeft: '5px', 
           marginRight: '5px', 
-          border: 'solid 2px #007a8c', 
+          border: 'solid 2px #8A1538', 
           paddingTop: '10px'
         },
       }
